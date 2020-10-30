@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&display=swap");
+
+/* ------------------------wcontainer */
+*root {
+  --gradiant: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+}
+* {
+  box-sizing: border-box;
+  line-height: 1.25em;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  font-family: "Lemonada", cursive;
+  background: url(bg-home.jpg);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #000;
+  height: 500px;
+}
+
+.weather-side {
+  position: relative;
+  height: 100%;
+  background-image: url(bg-inline.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  width: 300px;
+  transition: transform 300ms ease;
+  transform: translateZ(0) scale(1.02) perspective(1000px);
+  float: left;
+}
+
+.weather-side:hover {
+  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.weather-gradient {
+  position: absolute;
+  width: 100;
+  height: 100;
+  top: 0;
+  left: 0;
+  background-image: var(--gradient);
+  border-radius: 25px;
+  opacity: 0.7;
+}
+
+.date-container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.day-name {
+  margin: 0;
+}
+.date-name {
+  display: block;
+}
+.location {
+  display: inline-block;
+  margin-top: 10px;
+}
+.location-icon {
+  display: inline-block;
+  height: 0.8em;
+  width: auto;
+  margin-right: 5px;
+}
+.weather-container {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+.weather-icon {
+  height: 60px;
+  width: auto;
+  color: purple;
+}
+.weather-temp {
+  margin: 0;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.weather-desc {
+  margin: 0;
+}
+/* ---------------------------header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 5px 15px;
+}
+
+.header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #df8e00;
+
+  color: #f59cc8;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+.header input:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.header input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* ------------------------htu */
+.htu {
+  padding-top: 0;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.htu p {
+  margin-top: 0;
+}
+/* ---------------------footer */
+.footer {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  background-color: rgba(0, 0, 0);
+  position: relative;
+  border-top: 1px solid #000;
+  color: rgba(180, 180, 180, 0.5);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  margin: 50px 0 0 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: baseline;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: dotted 1px #a5d8c78e;
+  text-decoration: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: dotted 1px #a5d8c7;
+}
+.footer .copy-right-container .line {
+  opacity: 0.6;
+  height: 1px;
+  width: 100%;
+  margin: 1rem 0;
+  background-color: #fff !important;
+}
+.footer .copy-right-container .viewInfoFooter {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.footer .copy-right-container .privacy {
+  padding-left: 10px;
+  border-left: 1px solid #fff;
+  display: inline-block;
+}

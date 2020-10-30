@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- New Game       -->
+    <div class="header">
+      <input
+        type="text"
+        autocomplete="off"
+        class="search-box"
+        placeholder="Search for a city..."
+      />
+    </div>
+
+    <div class="htu">
+      <p style="color: red; font-size: 13px">Press Enter To Look Up</p>
+    </div>
+    <div class="container">
+      <div class="weather-side">
+        <div class="weather-gradient"></div>
+        <div class="date-container">
+          <h2 class="day-name">mon</h2>
+          <span class="date-name">9 mar 2009</span>
+          <i class="location-icon fa fa-map-marker"></i>
+          <span class="location">Hue, VN</span>
+        </div>
+        <div class="weather-container">
+          <i id="weather-icon" class="weather-icon fa fa-heart fa-3x"></i>
+          <h1 class="weather-temp">33&deg;c</h1>
+          <h3 class="weather-desc">Sunny</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <i class="fa fa-eye-slash"></i> Weather App 2.7.0
+        <span class="hide-xs">&middot;</span
+        ><br class="hide-sm hide-md hide-lg" />
+        From <a href="https://www.facebook.com/bangnt989">B</a> With
+        <i class="fa fa-heart-o"></i>
+      </div>
+      <div>
+        Thanks to
+        <a href="https://en.wikipedia.org/wiki/Internet"> Internet</a>
+        for providing the excellent source code and tutorials
+        <i class="fa fa-smile-o"></i>
+      </div>
+      <div class="copy-right-container" style="z-index: 2; position: relative">
+        <div class="line"></div>
+        <div class="viewInfoFooter">
+          <span> No Copyright &copy;</span>
+        </div>
+        <div class="privacy"><span>No Rights Reserved.</span></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
